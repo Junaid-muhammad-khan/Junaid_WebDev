@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - My Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        .inline-label { display: inline; font-weight: normal; }
+        fieldset { width: 450px; margin-top: 20px; }
+        .submit-btn { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>User Survey Form</h1>
+
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <input type="hidden" name="userid" id="userid" value="12345">
+        <label for="user">User Name:</label>
+        <input type="text" name="user" id="user" maxlength="30">
+
+        <label for="pword">Password:</label>
+        <input type="password" name="pword" id="pword">
+
+        <p><strong>Vote for your favorite month:</strong></p>
+        <input type="radio" name="fav_month" id="month_jan" value="January">
+        <label class="inline-label" for="month_jan">January</label><br>
+        <input type="radio" name="fav_month" id="month_june" value="June">
+        <label class="inline-label" for="month_june">June</label><br>
+        <input type="radio" name="fav_month" id="month_oct" value="October">
+        <label class="inline-label" for="month_oct">October</label>
+
+        <label for="social">Favorite Social Networking Site:</label>
+        <select name="social" id="social">
+            <option value="linkedin">LinkedIn</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="reddit">Reddit</option>
+        </select>
+
+        <fieldset>
+            <legend>Shipping Address</legend>
+            
+            <label for="AddressLine1">Address Line 1:</label>
+            <input type="text" name="AddressLine1" id="AddressLine1">
+
+            <label for="AddressLine2">Address Line 2:</label>
+            <input type="text" name="AddressLine2" id="AddressLine2">
+
+            <label for="City">City:</label>
+            <input type="text" name="City" id="City">
+
+            <label for="Province">Province:</label>
+            <input type="text" name="Province" id="Province">
+
+            <label for="PostalCode">Postal Code:</label>
+            <input type="text" name="PostalCode" id="PostalCode">
+        </fieldset>
+
+        <input type="submit" value="Submit Form" class="submit-btn">
+
+    </form>
+
+</body>
+</html>
