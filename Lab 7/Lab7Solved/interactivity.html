@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactivity - Steps 5-7</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Event Handler Practice</h1>
+
+    <button onclick="alert('Welcome')">Click for Welcome</button>
+    <br><br>
+
+    <a href="#" onmouseover="alert('Welcome')">Hover for a welcome message</a>
+    <br><br>
+
+    <a href="#" onmouseout="alert('Welcome')">Move your mouse pointer here for a welcome message</a>
+
+    <hr>
+
+    <script>
+       
+        let userName = prompt("Please enter your name:");
+        let userAge = prompt("Please enter your age:");
+        document.write("<p>Hello " + userName + "! You are " + userAge + " years old.</p>");
+
+        let num1 = parseFloat(prompt("Enter first number:"));
+        let num2 = parseFloat(prompt("Enter second number:"));
+        let num3 = parseFloat(prompt("Enter third number:"));
+        
+        let average = (num1 + num2 + num3) / 3;
+        alert("The average of the three numbers is: " + average);
+    </script>
+</body>
+</html>
